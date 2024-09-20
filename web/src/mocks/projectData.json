@@ -1,0 +1,44 @@
+[
+    {
+        "name": "项目级",
+        "key": "project",
+        "views": [
+            {
+                "key":"jusda_fe_starter",
+                "logoImgUrl": "https://ossdev.jus-link.com/cp-manager/share-folder/helpCenter/5463493078280183808.png?response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27jusda_fe_starter.png",
+                "type": "TS",
+                "title":"umi3模版项目",
+                "content": "umi版本为umi3的项目模版",
+                "directoryName": "jusda-fe-starter",
+                "gitResourceAddress": "http://gitlab.jusda.int/jusda-framework/jusda-fe-starter.git"
+            },
+            {
+                "key":"jusda_fe_umi4",
+                "logoImgUrl": "https://ossdev.jus-link.com/cp-manager/share-folder/helpCenter/5463493121229856768.png?response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27jusda_fe_umi4.png",
+                "type": "TS",
+                "title":"umi4模版项目",
+                "content": "umi版本为umi4的项目模版",
+                "directoryName": "jusda-fe-umi4",
+                "gitResourceAddress": "http://gitlab.jusda.int/jusda-framework/jusda-fe-umi4.git"
+            },
+            {
+                "key":"jusda_fe_umi4_widget",
+                "logoImgUrl": "https://ossdev.jus-link.com/cp-manager/share-folder/helpCenter/5463684504972566528.png?response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27jusda_fe_umi4_widget.png",
+                "type": "TS",
+                "title":"嵌入工作台widget umi4模版项目",
+                "content": "嵌入qiankun为主应用(工作台)的微应用(widget)umi4模版项目",
+                "directoryName": "jusda-fe-umi4-widget",
+                "gitResourceAddress": "http://gitlab.jusda.int/jusda-framework/jusda-fe-umi4-widget.git"
+            },
+            {
+                "key":"umi4_juslinkhub_qiankun_base",
+                "logoImgUrl": "https://ossdev.jus-link.com/cp-manager/share-folder/helpCenter/5463716279140622336.png?response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27umi4_juslinkhub_qiankun_base.png",
+                "type": "TS",
+                "title":"Hub 子应用模版",
+                "content": "嵌入qiankun为主应用(Hub 项目)的微应用(项目)umi4模版项目",
+                "directoryName": "umi4-juslinkhub-qiankun-base",
+                "gitResourceAddress": "http://gitlab.jusda.int/jusda-framework/umi4-juslinkhub-qiankun-base.git"
+            }
+        ]
+    }
+]

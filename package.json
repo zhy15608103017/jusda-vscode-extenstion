@@ -1,0 +1,91 @@
+{
+  "name": "juslinkmateriel",
+  "displayName": "juslink 前端物料",
+  "description": "juslink 前端物料 vscode 插件",
+  "publisher": "cx",
+  "icon": "images/icon.png",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "private": true,
+  "workspaces": [
+    "web"
+  ],
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished",
+    "onLanguage:html",
+		"onLanguage:vue",
+		"onLanguage:javascript",
+		"onLanguage:javascriptreact",
+		"onLanguage:typescript",
+		"onLanguage:typescriptreact"
+  ],
+  "files": [
+    "web/build/**/*"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+				"command": "extension.openCompontsWeb",
+				"title": "compontsWeb"
+			}
+    ],
+    "languages": [
+			{
+				"id": "javascript",
+        "hoverProvider": true,
+				"extensions": [
+					".jsx"
+				]
+			},
+      {
+				"id": "typescript",
+        "hoverProvider": true,
+				"extensions": [
+					".tsx"
+				]
+			}
+		]
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.jusda.int/jusda-ui/jusda-vscode-extenstion.git"
+  },
+  "scripts": {
+    "vscode:prepublish": "yarn run package",
+    "compile": "webpack",
+    "watch": "webpack --watch",
+    "package": "webpack --mode production --devtool hidden-source-map",
+    "compile-tests": "tsc -p . --outDir out",
+    "watch-tests": "tsc -p . -w --outDir out",
+    "pretest": "yarn run compile-tests && yarn run compile && yarn run lint",
+    "lint": "eslint src --ext ts",
+    "test": "vscode-test"
+  },
+  "dependencies": {
+		"fs-extra": "^8.0.1",
+    "apollo-node-client": "^1.4.3",
+    "fetch": "1.1.0",
+    "node-apollo": "1.2.1"
+	},
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.15.0",
+    "eslint": "^8.56.0",
+    "typescript": "5.1.6",
+    "ts-loader": "^9.5.1",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "@vscode/test-cli": "^0.0.4",
+    "@vscode/test-electron": "^2.3.8"
+  }
+}

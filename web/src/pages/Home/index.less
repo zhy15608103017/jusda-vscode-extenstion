@@ -1,0 +1,188 @@
+@extenstion-primary-color: #1890ff;
+.container {
+    width: 100%;
+    height: 100vh;
+    // background-color: #1E1E1E;
+    color: #FFFFFF;
+    .loading {
+      width: 100%;
+      height: 60vh;
+    }
+  
+    .cardContent {
+      margin: 0 20px;
+  
+      .header {
+        display: flex;
+        justify-content: space-between;
+        margin: 30px 0 50px;
+  
+        .title {
+          font-size: 24px;
+          margin-bottom: 10px;
+          color: white;
+        }
+        .subTitle{
+          margin-top: 20px;
+        }
+      }
+  
+      .content {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+      }
+    }
+    .conents{
+      :global{
+        .ant-tabs-tabpane{
+          display: flex;
+          flex-wrap: wrap;
+        }
+      }
+      :global{
+        .project{
+          background-image: url(@/assets/pc.svg);
+        }
+      }
+      .tabItemTitle{
+        background-repeat: no-repeat;
+        padding: 0 10px;
+        width: 150px;
+        span{
+          font-size: 20px;
+        }
+      }
+      .tabItemContent{
+        padding: 10px;
+        width: 200px;
+        margin: 6px 10px;
+        cursor: pointer;
+        position: relative;
+        border: 1px solid transparent;
+        transition: border 0.3s;
+        &:hover{
+          border: solid 1px @extenstion-primary-color;
+        }
+        &:hover::before{
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 24px;
+          height: 24px;
+          background-image: url(@/assets/success.svg);
+          background-size: contain;
+          background-repeat: no-repeat;
+          cursor: pointer;
+        }
+        img{
+          width: 180px;
+          height: 114px;
+        }
+        .contentDescription{
+          margin-top: 6px;
+          .descriptiontitle{
+            display: flex;
+            align-items: center;
+            .type{
+              width: 30px;
+              height: 30px;
+              position: relative;
+              background-color: #3d80cc;
+              .typeTxt{
+                font-weight: bold;
+                position: absolute;
+                bottom: 0;
+                right: 2px;
+              }
+            }
+            .projectDesc{
+              margin-left: 4px;
+              color: #d6d6d6;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+          }
+          .conentsDesc{
+            color: #8e8d91;
+            margin-top: 6px;
+          }
+        }
+      }
+      .itemActive{
+        position: relative;
+        border: solid 1px @extenstion-primary-color;
+        &::before{
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 24px;
+          height: 24px;
+          background-image: url(@/assets/success.svg);
+          background-size: contain;
+          background-repeat: no-repeat;
+          cursor: pointer;
+        }
+      }
+    }
+	.twoConents{
+		.inputCon{
+			display: flex;
+		    justify-content: center;
+			:global{
+				.ant-form{
+					width: 800px;
+					.ant-form-item{
+						margin-bottom: 40px;
+						.ant-row{
+							padding-left: 170px;
+							input{
+								background-color: transparent;
+								color: #d9d9d9;
+							}
+							label{
+								color: #d9d9d9;
+							}
+						}
+					}
+					
+				}
+			}
+			.projectPath{
+				background-color: transparent;
+			}
+			.folderIcon{
+				cursor: pointer;
+				// margin-right: 28px;
+				width: 18px;
+				height: 18px;
+				svg{
+					color: #d6d6d6;
+					font-size: 20px;
+				}
+			}
+		}
+	}
+    .footerBtns{
+		position: fixed;
+		bottom: 0;
+		right: 0;
+		margin-bottom: 30px;
+		margin-right: 50px;
+    .btn_last_step{
+      margin-right: 20px;
+    }
+		:global{
+			.ant-btn{
+				color: #d9d9d9;
+			}
+		}
+	}
+    .btn {
+      margin-right: 10px;
+    }
+  }

@@ -1,0 +1,21 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "start",
+			"path": "web",
+			"group": "build",
+			"label": "npm: watch:web",
+			"detail": "verbose"
+		},
+		{
+			"type": "npm",
+			"script": "watch",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "npm: watch:extension",
+			"detail": "webpack --watch"
+		}
+	]
+}
